@@ -24,3 +24,44 @@ function functionsmall() {
     document.getElementById("result").style.fontSize = 8 + "pt";
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// guardar_datos();
+
+function guardar_datos(){
+
+	var addText = document.getElementById("ingresoTexto").value;
+  
+  localStorage.setItem("nombre", nombre);
+
+}
+
+obtener_localsotrage();
+
+function obtener_localsotrage(){
+  
+  var nombre = localStorage.getItem("nombre");
+
+console.log ( nombre );
+console.log ( apellido );
+
+}
