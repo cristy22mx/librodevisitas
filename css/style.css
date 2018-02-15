@@ -22,3 +22,15 @@ margin: 10px auto;
 .small{
   font-size: small;
 }
+
+
+.container{
+  border: 1px solid black;
+  width: 50%;
+  height: 10vh;
+  padding:10px;
+}
+
+#enviar{
+  margin:10px;
+}
