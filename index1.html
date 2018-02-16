@@ -13,38 +13,48 @@
 
   <div class="containerglobal">
     <h1 text align="center">LIBRO DE VISITAS</h1>
-    <h3 text align="left">Comentarios anteriores</h3>
-    <content text align="left"><p>Me gusta front end development</p></content>
-    <hr>
-    <content text align="right"><p>Gracias por el contenido es super útil</p></content>
-    <hr>
-    <h3 tex align="center">Agregar un comentario</h3>
-    <div class="row">
-    <button type="button" class="btn btn-info large" id="large">Large</button>
-    <button type="button" class="btn btn-info medium" id="medium">Medium</button>
-    <button type="button" class="btn btn-info small" id="small">Small</button>
-    <button type="button" class="btn btn-info colorText" id="colorText">Color de texto</button>
-    <button type="button" class="btn btn-info fondo" id="fondo">Color de fondo</button>
-    <button type="button" class="btn btn-info lefth" id="left">Izquierdo</button>
-    <button type="button" class="btn btn-info center" id="center">Centrar</button>
-    <button type="button" class="btn btn-info right" id="right">Derecho</button>
-    </div>
-    <div class="row" >
-      <textarea rows="5" cols="100" class="contenedorTexto" id="ingresoTexto"> </textarea>
-    </div>
-    <div class="row">
-      <h3>Así se vería tu comentario</h3>
-    </div>
-    <div class="container" id="result"> <p id="preview"></p>
-    </div>
+    <section class="comment-add col-lg-10 col-lg-offset-1">
+      <h2>Comentarios anteriores</h2>
+      <div id="history-comment">
+        <div class="personal-comment">
+          <p class="post">Me encanta Front-end</p>
+        </div>
+      </div>
+    </section>
 
-    <button type="button" class="btn btn-info" id="enviar">Enviar Comentario</button>
-    
-        
-    </div>
-    
+    <section class="col-lg-10 col-lg-offset-1">
+      <h3 tex align="center">Agregar un comentario</h3>
 
-<script src="js/app.js"></script>  
+      <div class="row buttons" >
+        <button type="button" class="btn btn-info large" id="large">Large</button>
+        <button type="button" class="btn btn-info medium" id="medium">Medium</button>
+        <button type="button" class="btn btn-info small" id="small">Small</button>
+        <button type="button" class="btn btn-info colorText" id="colorText">Color de texto</button>
+        <button type="button" class="btn btn-info fondo" id="fondo">Color de fondo</button>
+        <button type="button" class="btn btn-info lefth" id="left">Izquierdo</button>
+        <button type="button" class="btn btn-info center" id="center">Centrar</button>
+        <button type="button" class="btn btn-info right" id="right">Derecho</button>
+      </div>
+      <div class="row" >
+        <textarea rows="5" cols="100" class="contenedorTexto" id="ingresoTexto"> 
+        </textarea>
+      </div>
+      <div class="row">
+        <h3>Así se vería tu comentario
+        </h3>
+        <div class="container" id="result"> 
+          <p id="preview"></p>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-info" id="send">Enviar Comentario</button>
+
+
+    </div>
+  </section>
+
+  <script src="js/app.js"></script> 
+  <script src="js/crud.js"></script>  
 </body>
 </html>
 

@@ -82,9 +82,23 @@ function functionRight() {
     textPreview.style.textAlign = "right";
 }
 
+// Para añadir el comentario del usuario a la lista
 
+var sendpreview = document.getElementById("send").addEventListener("click", send);
 
+function send(){
+// Crear nodo de tipo Element
+var comment = document.createElement('p');
 
+// Crear nodo de tipo Text
+var content = document.createTextNode(textPreview);
+
+// Añadir el nodo Text como hijo del nodo Element
+paragraph.appendChild(content);
+
+// Añadir el nodo Element como hijo de la pagina
+document.body.appendChild(comment);
+}
 
 
 
