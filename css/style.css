@@ -25,12 +25,16 @@ margin: 10px auto;
 
 
 .container{
-  border: 1px solid black;
   width: 50%;
   height: 10vh;
   padding:10px;
 }
 
-#enviar{
+#send{
   margin:10px;
 }
+
+body > div > section:nth-child(3) > div:nth-child(2){
+ margin:10px; 
+}
+
